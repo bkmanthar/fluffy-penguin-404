@@ -70,28 +70,31 @@ footer .bottom_footer {
     width: 300px;
     height: 300px;
 }
-
+/* Override the existing styles */
 .android-apk-direct-download {
-    display: block;
-    width: 20%;
-    border: 1px solid grey;
-    border-radius: 10px;
-    box-shadow: 2px 2px 8px grey;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
+    display: block !important;
+    width: auto !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
+    margin-top: 0 !important;
+    background: transparent !important;
 }
 
 .android-apk-direct-download:hover {
-    transition: ease 0.5s;
-    width: 21%;
+    transition: none !important;
+    width: auto !important;
+    transform: scale(1.05); /* Optional: Add hover effect without border */
 }
 
 .direct-download-icon {
-    width: 30%;
-    border: 1px solid grey;
-    border-radius: 10px;
-    box-shadow: 2px 2px 8px grey;
+    width: auto !important;
+    border: none !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+    background: transparent !important;
 }
 
 .app-store {
