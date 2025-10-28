@@ -56,6 +56,10 @@ $('#company_slider').owlCarousel({
     }
 })
 
+function showPrivacyPolicy() {
+    document.getElementById('privacy-policy').style.display = 'block';
+    window.scrollTo(0, document.getElementById('privacy-policy').offsetTop);
+}
 
 $('#testimonial_slider').owlCarousel({
     loop: true,
